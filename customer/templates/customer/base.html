@@ -1,0 +1,94 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAS Services</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><strong>JAS Services</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Today, {{ date }} <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+      <ul class="navbar-nav ml-auto">
+           <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">About JAS Services</a>
+          <a class="dropdown-item" href="#">Hot Deals</a>
+          <a class="dropdown-item" href="#">Why Us</a>
+          <a class="dropdown-item" href="#">Careers</a>
+        </div>
+      </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Insurance</a>
+          <a class="dropdown-item" href="#">Loans</a>
+          <a class="dropdown-item" href="{% url 'realestate' %}">Real Estate</a>
+        </div>
+      </li>
+             <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Why us</a>
+          <a class="dropdown-item" href="#">Bill and Payments</a>
+          <a class="dropdown-item" href="#">Complaint Registration</a>
+          <a class="dropdown-item" href="#">Customer Care</a>
+        </div>
+      </li>
+            <li class="nav-item active">
+        <a class="nav-link" href="{% url 'customer:customerportal' %}">Customer Portal <span class="sr-only">(current)</span></a>
+      </li>
+        </ul>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+
+<footer><div class="card">
+
+   <!--    <div class="aboutJAS footer-widget">
+            <div class="card-header">
+    About JAS®</div>
+                <p>JAS Financial Services is a ...... JAS Financial Services was founded in ....<br>
+                <strong>Join our team</strong>:
+        </div>
+</div>
+    <br>
+ -->
+<br>
+    <div class="footer-copyright"><div class="wrap"><center>
+	<p>Copyright © 2009 - 2020 JAS Financial Services. All Rights Reserved. JAS® is a registered trademark.</p><p>
+	Managed by Jyoti Shravgi</p><p></center>
+</p></div></div>
+    </footer>
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
