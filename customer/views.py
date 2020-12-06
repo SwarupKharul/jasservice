@@ -15,10 +15,6 @@ date = datetime.date.today()
 def portal(request):
     return render(request, 'customer/customerportal.html',{"date": date})
 
-@login_required
-def info(request):
-    return render(request, 'customer/info.html',{"date": date})
-
 
 def signupuser(request):
     if request.method == 'GET':
@@ -30,7 +26,7 @@ def signupuser(request):
                 user = User.objects.create_user(request.POST['username'], password=request.POST['password1'], email=request.POST['email'])
                 email = request.POST['email'].lower()
                 r = User.objects.filter(email=email)
-                if r.count():
+                if r.count()==0:
                     return render(request, 'customer/signupuser.html',
                                   {'error': 'Email already exists',"date": date})
                 else:
@@ -47,23 +43,4 @@ def signupuser(request):
         else:
             # tell the user the password didn't match
             return render(request, 'customer/signupuser.html', {'error': 'Passwords did not match'})
-
-
-def loginuser(request):
-    if request.method == 'GET':
-        return render(request, 'customer/loginuser.html', {'form': AuthenticationForm(),"date": date})
-    else:
-        user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
-        if user is None:
-            return render(request, 'customer/loginuser.html',
-                          {'form': AuthenticationForm(), 'error': 'User password did not match',"date": date})
-        else:
-            login(request, user)
-            return redirect('customer:info')
-
-@login_required
-def logoutuser(request):
-    if request.method == 'POST':
-        logout(request)
-        return redirect('home')
 

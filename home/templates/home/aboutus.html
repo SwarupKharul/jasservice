@@ -1,0 +1,247 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+<div class="marketing container" style="background-color:white;">
+<div class="jumbotron" style="background-color:white;">
+    <h1><center><b>ABOUT US</b></center></h1><br>
+<p class="lead">JAS Services is a Property,Loan & Insurance portfolio management venture started in the year 2020. Simplifying the complexity of the client is a key objective at JAS Services.
+Social responsibility
+We are very much aware that this world isn't ideal and that by helping others we can make a difference. It is our goal to make a difference in this world by creating bespoke services. By becoming a part of Jas Services you will contribute too.
+</p>
+</div>
+</div>
+<div class="marketing container" style="background-color:white;">
+<hr class="featurette-divider">
+    <h2><center><b>WHY US</b></center></h2>
+    <br>
+    <div class="row featurette">
+
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Our Approach.</h2>
+        <p class="lead">We are very much aware that this world isn't ideal and that by helping others we can make a difference. We regularly attend humanitarian tournaments, provide gifts for various occasions to the less privileged and donate our knowledge. It is our goal to make a difference in this world by creating bespoke products and giving back. By becoming a part of EtonDigital, you will contribute too.</p>
+      </div>
+      <div class="col-md-4 order-md-2">
+          <br>
+        <img src="{% static 'home/ourapproach.jfif' %}" alt="Squirrel" width="450" height="250">
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Raising the Bar with Quality. </h2>
+        <p class="lead">We are very much aware that this world isn't ideal and that by helping others we can make a difference. We regularly attend humanitarian tournaments, provide gifts for various occasions to the less privileged and donate our knowledge. It is our goal to make a difference in this world by creating bespoke products and giving back. By becoming a part of EtonDigital, you will contribute too.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+          <br>
+        <img src="{% static 'home/excellence.jfif' %}" alt="Squirrel" width="450" height="250">
+      </div>
+    </div>
+    <br>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Social Responsibility. </h2>
+        <p class="lead">We are very much aware that this world isn't ideal and that by helping others we can make a difference. We regularly attend humanitarian tournaments, provide gifts for various occasions to the less privileged and donate our knowledge. It is our goal to make a difference in this world by creating bespoke products and giving back. By becoming a part of EtonDigital, you will contribute too.</p>
+      </div>
+      <div class="col-md-5">
+          <br>
+        <img src="{% static 'home/Corporate-social-responsibility.jpg' %}" alt="Squirrel" width="450" height="250">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+<br>
+<br>
+	<p><h2><center><b>OUR PROCESS</b></center></h2>
+	<br><br>
+<div id="dg">
+		<div class="container">
+			<div class="row centered">
+
+			<!-- First Chart -->
+			<div class="col-lg-3">
+            <img src="{% static 'home/progressbar.png' %}" alt="Squirrel" width="220" height="200">
+				<br>
+				<p><b>Identify</b></p>
+				<p><small>A key step in the process - identifying the right property suited to your requirements.</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Second Chart -->
+			<div class="col-lg-3">
+				<img src="{% static 'home/progressbar.png' %}" alt="Squirrel" width="220" height="200">
+				<br>
+				<p><b>Research</b></p>
+				<p><small>The most important step in our process to provide you with the perfect property.</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Third Chart -->
+			<div class="col-lg-3">
+				<img src="{% static 'home/progressbar.png' %}" alt="Squirrel" width="220" height="200">
+				<br>
+				<p><b>Simplify</b></p>
+				<p><small>Simplifying the process to maintain transparency and understanding.</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Fourth Chart -->
+			<div class="col-lg-3">
+<img src="{% static 'home/progressbar.png' %}" alt="Squirrel" width="220" height="200">
+				<br>
+				<p><b>Delivery</b></p>
+				<p><small>Prompt service to ensure the timely completion of due processes to maximize comfort and benefit to customer.</small></p>
+			</div><!-- /col-lg-3 -->
+
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
+
+<hr class="featurette-divider">
+
+
+<style>
+.image-banner {
+	position: relative;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+    .image-banner text {
+	display: block;
+	transition: all 1.7s;
+}
+
+.image-banner:hover text {
+	transform: scale(1.5);
+}
+
+.banner-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, .65);
+	padding: 15px 25px;
+	opacity: 0;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: translateY(100%);
+}
+
+.image-banner:hover .banner-description {
+	opacity: 1;
+	transform: translateY(0);
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+</style>
+
+  <div class="album py-5 bg-light">
+      <p><h2><center><b>OUR VALUES</center></h2>
+      <br>
+    <div class="container">
+<br>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="image-banner">
+                <div class="card badge-primary" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center> Quality </center></h2>
+                    </div>
+
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+        <div class="col-md-4">
+            <div class="image-banner">
+                <div class="card badge-success" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center>Service</center></h2>
+                    </div>
+                </div>
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+        <div class="col-md-4">
+            <div class="image-banner">
+                <div class="card badge-secondary" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center>Excellence</center></h2>
+                    </div>
+                </div>
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md-4" >
+            <div class="image-banner">
+                <div class="card badge-dark" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center>Passion</center></h2>
+                    </div>
+                </div>
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+        <div class="col-md-4">
+             <div class="image-banner">
+                <div class="card badge-light" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center>Integrity</center></h2>
+                    </div>
+                </div>
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+                <div class="col-md-4">
+             <div class="image-banner">
+                <div class="card  badge-info" style="width: 21.87rem; height: 13rem;">
+                    <div class="card-body">
+                        <h2 class="card-text"><br><center>Flexibility</center></h2>
+                    </div>
+                </div>
+				<div class="banner-description">
+					<p>This is a brief description of the image. This is a photograph of a squirel on the train tracks that was taken in Oregon. This squirrel was incredibly brave and enjoyed playing on the tracks.</p>
+                </div>
+			</div><!-- /image-banner -->
+        </div>
+     </div>
+     </div>
+</div>
+</div>
+
+{% endblock %}
+
+

@@ -25,12 +25,16 @@ urlpatterns = [
 
     # Home
     path('', views.home, name='home'),
-    path('realestate/', views.realestate, name='realestate'),
-
+    path('insurance/', views.insurance, name='insurance'),
+    path('aboutus/', views.aboutus, name='aboutus'),
+    path('career/', views.career, name='career'),
+    path('loan/', views.loan, name='loan'),
+    path('property/', views.property, name='property'),
+    path('suggestion/', views.suggestion, name='suggestion'),
+    path('sendemail/', views.sendemail, name='sendemail'),
     # User
-    path('customer/', include('customer.urls', namespace="customer")),
+    #path('customer/', include('customer.urls', namespace="customer")),
 
 ]
-
-# urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

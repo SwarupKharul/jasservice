@@ -1,0 +1,61 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron" style="background-color:white;">
+<div class="card-deck">
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/Insurance.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+            <h5 class="card-title">Two Wheeler Insurance</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/loans.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+            <h5 class="card-title">Car Insurance</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/property.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+          <h5 class="card-title">Health Insurance</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+</div>
+    <br><br>
+<div class="card-deck">
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/property.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+          <h5 class="card-title">Cyber Insurance</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/property.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+          <h5 class="card-title">Travel Insurance</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+    <div class="card" style="width: 10rem;">
+        <img src="{% static 'home/property.jpg' %}" class="card-img-top" alt="pic">
+        <div class="card-body">
+          <h5 class="card-title">Personal Accident</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+{% endblock %}
